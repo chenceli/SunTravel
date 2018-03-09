@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="js/index.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+    <!--头部开始-->
+    <header>
+        <div class="headerNav">
+            <div class="headerNavInner">
+                <a class="navIconBox asideButton"><i class="navIcon">&#xe66c;</i></a>
+                <div class="headerNavInnerLogo">
+                    <a href="index.html"></a>
+                </div>
+                <div class="headerNavInnerRightBox">
+                    <div class="headerNavInnerRight">
+                        <ul class="headerNavBer">
+                            <li class="main">
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="tours.html">TOUR</a>
+                                <ul class="navHiddenMenu">
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">TOURS GIRD</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">TOURS GIRD</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">TOURS GIRD</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">TOURS GIRD</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="about.html">ABOUT</a>
+                                <ul class="navHiddenMenu">
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">OUR TEAM</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">OUR TEAM</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">OUR TEAM</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">OUR TEAM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="gallery.html" id="headerNavBerThis">GALLERY</a>
+                                <ul class="navHiddenMenu">
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">GALLERY COBBLES</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">GALLERY COBBLES</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">GALLERY COBBLES</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">GALLERY COBBLES</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="blog.html">BLOG</a>
+                                <ul class="navHiddenMenu">
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">BLOG LIST</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">BLOG LIST</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">BLOG LIST</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">BLOG LIST</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">BLOG LIST</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">BLOG LIST</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">BLOG LIST</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">CONTACTS</a>
+                                <ul class="navHiddenMenu">
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">OURS CONTACTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="navHiddenMenuA">OURS CONTACTS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="headerNavList">
+                            <li>
+                                <a href="">
+                                    <img src="img/navicon.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/navicon1.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/navicon2.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="navIconBox" href=""><i class="navIcon" style="display: none">&#xe634;</i></a>
+                <div class="asideHidden">
+                    <ul>
+                        <li>
+                            <div class="asideTitle">Home</div>
+                            <!--<i class="asideIcon">&#xe695;</i>-->
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="asideTitle">Tours</div>
+                            <i class="asideIcon">&#xe695;</i>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="asideTitle">About</div>
+                            <i class="asideIcon">&#xe695;</i>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="asideTitle">Gallery</div>
+                            <i class="asideIcon">&#xe695;</i>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="asideTitle">Blog</div>
+                            <i class="asideIcon">&#xe695;</i>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="asideTitle">Contacts</div>
+                            <i class="asideIcon">&#xe695;</i>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                        <li class="asideText">
+                            <div class="asideTitle">Tours List</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--头部结束-->
+
+    <!--banner开始-->
+    <section class="banner">
+        <div class="bannerImgBox">
+            <img src="img/background-29-1920x900.jpg" alt="">
+        </div>
+        <div class="container bannerTitle">
+            <h1>Gallery</h1>
+            <h6>Photos of Our Destinations</h6>
+        </div>
+    </section>
+    <!--banner结束-->
+
+    <!--列表开始-->
+    <section class="galleryList">
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-01-270x200.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-05-270x430.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-09-270x200.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-02-270x430.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-06-270x200.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-10-270x200.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-03-270x200.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-07-270x430.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-11-270x200.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-04-270x200.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-08-270x200.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                    <a href="" class="galleryBox">
+                        <span class="figure">
+                            <img class="galleryImg" src="img/Gallery/portfolio-12-270x430.jpg" alt="">
+                            <div class="shadow"></div>
+                            <span class="galleryText">Istanbul, Turkey</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--列表结束-->
+
+    <!--底部开始-->
+    <footer>
+        <div class="container">
+            <form action="">
+                <div class="row footerTop">
+                    <div class="footerLogo col-lg-3 col-md-3 col-sm-7 col-xs-10">
+                        <p class="footerTitle">Subscribe to our Newsletter!</p>
+                        <p class="footerTest">STAY IN TUNE</p>
+                    </div>
+                    <div class="footerForm col-lg-3 col-md-3 col-sm-7 col-xs-10">
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="footerForm col-lg-3 col-md-3 col-sm-7 col-xs-10">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="footerForm col-lg-3 col-md-3 col-sm-7 col-xs-10">
+                        <button type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row footerBottom">
+                    <div class="footerImg col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <a href="">
+                            <img src="img/navLogo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footerText col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p>
+                            Copyright ©2018
+                            <a href="">SunTravel</a>
+                            . All Rights Reserved.</p>
+                    </div>
+                    <div class="footerIconBox col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <a href=""><i class="footerIcon">&#xe63a;</i></a>
+                        <a href=""><i class="footerIcon">&#xe72c;</i></a>
+                        <a href=""><i class="footerIcon">&#xe660;</i></a>
+                        <a href=""><i class="footerIcon">&#xe612;</i></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--返回顶部-->
+        <div class="returnTop">
+            <a href="#top">
+                <i class="returnTopIcon">&#xe62c;</i>
+            </a>
+        </div>
+    </footer>
+    <!--底部结束-->
+
+</body>
+</html>

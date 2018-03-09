@@ -1,0 +1,820 @@
+@import "base.css";
+
+@font-face {
+    font-family: 'iconfont';  /* project id 546649 */
+    src: url('//at.alicdn.com/t/font_546649_00d191z2zi553ik9.eot');
+    src: url('//at.alicdn.com/t/font_546649_00d191z2zi553ik9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_546649_00d191z2zi553ik9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_546649_00d191z2zi553ik9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_546649_00d191z2zi553ik9.svg#iconfont') format('svg');
+}
+
+i{
+    font-style: normal;
+}
+
+
+/*头部开始*/
+header{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+}
+/*导航开始*/
+.headerNav{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top:0;
+    z-index: 9999;
+    background: #fff;
+}
+.headerNavInner{
+    padding: 15px 15px 20px;
+    margin: 0 auto;
+    /*background: pink;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerNavInnerLogo{
+    width:148px;
+    height: 40px;
+    /*background: yellow;*/
+    padding: 5px 0;
+}
+.headerNavInnerLogo a{
+    display: block;
+    width: 100%;
+    height:30px;
+    background: url("../img/navLogo.png") no-repeat center center;
+}
+.headerNavInnerRight{
+    height: 24px;
+    /*background: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.headerNavBer{
+    height:100%;
+    /*background: yellowgreen;*/
+    margin-right: 51px;
+}
+.headerNavBer li{
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    height: 50px;
+}
+.headerNavBer li:first-child{
+    margin:0;
+}
+.headerNavBer li a{
+    display: block;
+    color: #000;
+    font-size: 12px;
+    font-weight: 900;
+}
+.headerNavBer li a:hover{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff9f1c;
+    text-decoration: none;
+}
+#headerNavBerThis{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff9f1c;
+}
+.headerNavList{
+    height: 24px;
+    /*background: yellow;*/
+    padding-left: 15px;
+    border-left: 1px solid #bdc2c4;
+}
+.headerNavList li{
+    display: inline-block;;
+    padding:0 13px;
+}
+.headerNavList li a{
+    display: block;
+}
+.headerNavList li a img{
+    display: block;
+}
+.headerNavList li a:hover{
+    opacity: 0.7;
+}
+.navIcon{
+    font-size: 30px;
+    color: #333;
+    font-family: 'iconfont';
+}
+.navIconBox:last-child{
+    opacity: 0;
+}
+.navHiddenMenu{
+    width: 195px;
+    padding: 20px 0;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    left: -75px;
+    right: 0;
+    top: 60px;
+    display: none;
+}
+.navHiddenMenu li{
+    width: 100%;
+    height: 24px;
+    margin: 0;
+}
+.navHiddenMenu li >a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 8px;
+    color: #000;
+    text-align: center;
+    line-height: 24px;
+    font-family: "微软雅黑";
+}
+.navHiddenMenu li >a.navHiddenMenuA:hover{
+    color: #ff9f1c;
+    text-decoration: none;
+    border: none;
+}
+.asideHidden{
+    width: 270px;
+    height: 100%;
+    position: fixed;
+    top:75px;
+    left: -270px;
+    background: #ffffff;
+    box-shadow: 4px 4px 6px 6px rgba(0,0,0,0.05);
+    padding: 1px;
+    box-sizing: border-box;
+}
+.asideHidden > ul{
+    width: 100%;
+    margin-bottom: 0;
+}
+.asideHidden > ul>li:hover{
+    background: #ff9f1c;
+}
+.asideHidden > ul >li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.asideTitle{
+    font-size: 16px;
+    color: #000;
+}
+.asideHidden > ul >li:hover .asideTitle{
+    color: #fff;
+}
+.asideIcon{
+    font-family: 'iconfont';
+    font-size: 8px;
+    color: #000;
+    transition: 0.5s;
+}
+.asideHidden > ul >li.asideText{
+    padding: 0 40px;
+    display: none;
+    line-height: 48px;
+}
+/*头部结束*/
+
+/*banner开始*/
+.banner{
+    width: 100%;
+    margin-top: 75px;
+    position: relative;
+}
+.bannerImgBox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bannerImgBox img{
+    max-width: 100%;
+    min-height: 101%;
+    min-width: 101%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.bannerImgBox::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.bannerTitle{
+    z-index: 2;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bannerTitle h1{
+    line-height: 1.2;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+.bannerTitle h6{
+    line-height: 1.2;
+    font-size:22px;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+}
+/*banner结束*/
+
+/*About Us开始*/
+.aboutUs{
+    padding: 80px 0;
+}
+.aboutUsRight{
+    float: right;
+}
+.auRight h3{
+    line-height: 1.38889;
+    font-size: 36px;
+    font-weight: 400;
+    color:#000;
+}
+.auRightText{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #888;
+}
+.bestOffersButton{
+    margin-top: 50px;
+    width: 190px;
+}
+.headerTitleButton1{
+    display: inline-block;
+    padding: 9px 20px;
+    border: 1px solid #ff9f1c;
+    font-size: 12px;
+    color: #fff;
+    line-height: 21px;
+    border-radius: 30px;
+    font-weight: 900;
+    text-align: center;
+    transition: 1s;
+    background: #ff9f1c;
+}
+.headerTitleButton1:hover{
+    background: #cf7700;
+    color: #fff;
+    border: 1px solid #cf7700;
+}
+.auLeftIMG{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.auLeftIMG:hover{
+    opacity: 0.8;
+}
+.auLeft > li:nth-child(4){
+    margin-bottom: 35px;
+}
+/*About Us结束*/
+
+/*What Customers Say开始*/
+.CustomersBox{
+    position: relative;
+}
+.CustomersList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.CustomersImg img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #F9F9F9;
+    box-sizing: content-box;
+}
+.CustomersList h3{
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: #000;
+}
+.CustomersText{
+    margin-top: 20px;
+}
+.CustomersText p{
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+.bestOffers{
+    width: 100%;
+    text-align: center;
+    padding:70px 0 80px 0;
+    background:#F5F5F5;
+}
+.CustomersBox>h3{
+    font-size: 36px;
+    color: #000;
+}
+.CustomersBox>p{
+    font-size: 16px;
+    color: #929292;
+}
+/*箭头*/
+.CustomersArrowLeft{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.CustomersArrowRight{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.CustomersArrowLeft a,.CustomersArrowRight a{
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    text-align: center;
+    line-height: 28px;
+    transition: 0.5s;
+}
+.CustomersIcon{
+    font-family: 'iconfont';
+    color: #000;
+    font-size: 14px;
+}
+.CustomersArrowLeft a:hover,.CustomersArrowRight a:hover{
+    background: #FF9F1C;
+    border: 2px solid #FF9F1C;
+    color: #fff;
+}
+.CustomersArrowLeft a:hover .CustomersIcon,.CustomersArrowRight a:hover .CustomersIcon{
+    color: #fff;
+}
+/*轮播点*/
+.CustomersLunbo li{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    outline: none;
+    border-radius: 50%;
+    background: #000;
+    transition: 0.3s all ease;
+    margin-left: 10px;
+}
+#Customer{
+    transform: scale(0.8);
+    box-shadow: 0 0 0 6px #ff9f1c;
+}
+.CustomersLunbo li:first-child{
+    margin-left: 0;
+}
+/*What Customers Say结束*/
+
+/*底部开始*/
+footer{
+    padding: 70px 0 15px;
+    width: 100%;
+}
+.footerTitle{
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    font-family: '微软雅黑';
+    text-align: right;
+}
+.footerLogo{
+    margin-bottom: 15px;
+}
+.footerTest{
+    font-size: 10px;
+    letter-spacing: 0.5em;
+    text-align: right;
+    font-family: '微软雅黑';
+}
+.footerForm{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.footerForm input{
+    height: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    border-radius: 30px;
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #888;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.footerForm input:focus{
+    outline: none;
+}
+.footerForm button{
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #ff9f1c;
+    min-width: 185px;
+    padding: 9px 20px;
+    font-size: 12px;
+    line-height: 21px;
+    border-radius: 30px;
+    font-weight: 900;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+footer hr{
+    margin-top: 90px;
+}
+.footerImg,.footerText{
+    margin-bottom: 15px;
+}
+.footerImg a{
+    display: block;
+    width: 110px;
+    height: 22px;
+}
+.footerImg a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.footerText p{
+    font-size: 12px;
+    line-height: 30px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: '微软雅黑';
+    text-align: center;
+}
+.footerText p a{
+    color: #ff9f1c;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: '微软雅黑';
+}
+.footerText p a:hover{
+    color: #cf7700;
+}
+.footerIconBox{
+    text-align: right;
+}
+.footerIconBox a{
+    margin-left: 20px;
+}
+.footerIcon{
+    font-size: 20px;
+    color: #888;
+    font-family: 'iconfont';
+}
+.footerIcon:hover{
+    color: #6f6f6f;
+}
+/*返回顶部*/
+.returnTop a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #EA921A;
+    transition: 1s;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 50px;
+}
+.returnTop a:hover{
+    background: #000;
+}
+.returnTopIcon{
+    font-size: 12px;
+    color: #fff;
+    font-family: 'iconfont';
+}
+/*底部结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*>1200px*/
+@media screen and (min-width: 1200px) {
+    .navIconBox{
+        display: none;
+    }
+    .headerNavInnerRightBox{
+        display: block;
+    }
+    .headerNavInner{
+        width: 1200px;
+    }
+    .banner{
+        height: 344px;
+    }
+    .bannerTitle h1{
+        display: block;
+    }
+    .bannerTitle{
+        padding-top: 120px;
+    }
+    .bannerImgBox img{
+        transform: translateY(-30%);
+    }
+    .auRight{
+        width: 470px;
+        margin-left: 36px;
+    }
+    .CustomersList:hover .CustomersImg{
+        opacity: 0.5;
+    }
+    .CustomersList:hover .CustomersText{
+        opacity: 0.5;
+    }
+    .CustomersList:hover .CustomersButton{
+        display: block;
+    }
+    .CustomersButton{
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin: auto;
+        height: 40px;
+        display: none;
+    }
+    .CustomersLunbo{
+        display: none;
+    }
+}
+
+/*992px-1200px*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .navIconBox{
+        display: none;
+    }
+    .headerNavInnerRightBox{
+        display: block;
+    }
+    .headerNavInner{
+        max-width: 1200px;
+    }
+    .banner{
+        height: 439px;
+    }
+    .bannerTitle h1{
+        display: block;
+    }
+    .bannerTitle{
+        padding-top: 170px;
+    }
+    .blogBox{
+        padding-left: 10%;
+    }
+    .blogList{
+        width: 350px;
+    }
+    .CustomersList:hover .CustomersImg{
+        opacity: 0.5;
+    }
+    .CustomersList:hover .CustomersText{
+        opacity: 0.5;
+    }
+    .CustomersList:hover .CustomersButton{
+        display: block;
+    }
+    .CustomersButton{
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin: auto;
+        height: 40px;
+        display: none;
+    }
+    .CustomersLunbo{
+        display: none;
+    }
+}
+
+/*768px-992px*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navIconBox{
+        display: block;
+    }
+    .headerNavInnerRightBox{
+        display: none;
+    }
+    .headerNavInner{
+        max-width: 992px;
+    }
+    .headerTitle h1{
+        font-size: 50px;
+    }
+    .headerTitle p{
+        margin: 10px auto 0;
+        font-size: 15px;
+    }
+    .headerTitleButton{
+        margin-top: 30px;
+    }
+    .WhySunTraverBox{
+        max-width: 330px;
+    }
+    .banner{
+        height: 232px;
+    }
+    .bannerTitle h1{
+        display: none;
+    }
+    .bannerTitle{
+        padding-top: 100px;
+    }
+    .CustomersList:last-child{
+        display: none;
+    }
+    .CustomersLunbo li:nth-child(2){
+        display: none;
+    }
+    .CustomersLunbo li:nth-child(3){
+        display: none;
+    }
+    .CustomersArrowLeft,.CustomersArrowRight{
+        display: none;
+    }
+    .footerTop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerIconBox,.footerTitle,.footerTest{
+        text-align: center;
+    }
+    .footerImg{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*<768px*/
+@media screen and (max-width: 768px) {
+    .navIconBox{
+        display: block;
+    }
+    .headerNavInnerRightBox{
+        display: none;
+    }
+    .headerNavInner{
+        max-width: 768px;
+    }
+    .headerTitle h1{
+        font-size: 40px;
+    }
+    .headerTitle p{
+        margin: 10px auto 0;
+        font-size: 15px;
+    }
+    .headerTitleButton{
+        margin-top: 30px;
+    }
+    .banner{
+        height: 97px;
+    }
+    .bannerTitle h1{
+        display: none;
+    }
+    .bannerTitle{
+        padding-top: 34px;
+    }
+    .blogList{
+        max-width: 410px;
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .aboutUsRight{
+        text-align: center;
+    }
+    .auRight{
+        max-width: 540px;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    .auRight h3{
+        line-height: 1.5;
+        font-size: 28px;
+    }
+    .auRightText{
+        font-size: 15px;
+    }
+    .bestOffersButton{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .CustomersList:nth-child(2){
+        display: none;
+    }
+    .CustomersList:last-child{
+        display: none;
+    }
+    .CustomersArrowLeft,.CustomersArrowRight{
+        display: none;
+    }
+    .CustomersBox>h3{
+        font-size: 28px;
+    }
+    .CustomersBox>p{
+        font-size: 15px;
+    }
+    .CustomersText{
+        max-width: 500px;
+    }
+    .footerImg{
+        display: flex;
+        justify-content: center;
+    }
+    .footerTop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerIconBox,.footerTitle,.footerTest{
+        text-align: center;
+    }
+}
+
